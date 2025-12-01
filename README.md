@@ -92,7 +92,7 @@ python scripts/python/train_ch4_model.py \
 
 ```bash
 python scripts/python/mc_nee_uncertainty.py \
-    --fluxes /path/to/Instantaneous_Fluxes_11am_umol_s.vrt \ # vrt ot tiff
+    --fluxes /path/to/Instantaneous_Fluxes_11am_umol_s.vrt \ # vrt or tiff
     --mask /path/to/Shallow_Water_Mask.tif \
     --reco-band 1 \
     --gpp-band 2 \
@@ -111,7 +111,7 @@ python scripts/python/mc_nee_uncertainty.py \
 
 ```bash
 python scripts/python/mc_ch4_uncertainty.py \
-    --ch4-raster /path/to/CH4_Moment_Mean_umol_s.tif \ # vrt ot tiff
+    --ch4-raster /path/to/CH4_Moment_Mean_umol_s.tif \ # vrt or tiff
     --mask /path/to/Shallow_Water_Mask.tif \
     --rmse 0.026 \
     --f-ch4-mean 0.876 --f-ch4-sd 0.05 \
@@ -191,7 +191,7 @@ CH4_moment = γ₀ + γ₁×LST + γ₂×LST²
 
 ### Eddy Covariance Data
 
-Half-hourly eddy covariance measurements (CO₂ and CH₄ fluxes) from the Kuibyshev Reservoir tower site are available upon request. Contact: [MVKozhevnikova@kpfu.ru](Project Superviser)
+Half-hourly eddy covariance measurements (CO₂ and CH₄ fluxes) from the Kuibyshev Reservoir tower site are available upon request. Contact: [Project Superviser](mailto:MVKozhevnikova@kpfu.ru)
 
 ### Satellite Data
 
@@ -243,5 +243,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or collaboration inquiries, please contact:
 - **Author**: [Artur Gafurov]
-- **Email**: [amgafurov@kpfu.ru](e-mail)
-- **Institution**: [Kazan Federal University]
+- **Email**: [e-mail](amgafurov@kpfu.ru)
+- **Institution**: [Kazan Federal University](en.kpfu.ru)
