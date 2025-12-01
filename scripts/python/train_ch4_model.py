@@ -22,7 +22,7 @@ Usage:
         --satellite-data /path/to/s2_landsat_predictors.csv \
         --output-dir ./output
 
-Author: [Your Name]
+Author: Artur Gafurov
 Version: 1.0
 ================================================================================
 """
