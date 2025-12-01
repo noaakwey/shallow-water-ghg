@@ -21,7 +21,7 @@ Usage:
         --n-iter 2000 \
         --output-plot Figure5_MC_Results.png
 
-Author: [Your Name]
+Author: Artur Gafurov
 Version: 1.0
 ================================================================================
 """
