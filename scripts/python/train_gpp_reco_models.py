@@ -17,7 +17,7 @@ Usage:
         --training-data /path/to/training_data.csv \
         --output-dir ./output
 
-Author: [Your Name]
+Author: Artur Gafurov
 Version: 1.0
 ================================================================================
 """
