@@ -29,11 +29,11 @@ This repository contains the complete codebase for estimating greenhouse gas emi
 │       ├── s2_landsat_predictors.js    # S2 + Landsat LST extraction
 │       ├── gpp_reco_mapping.js         # GPP/Reco flux mapping
 │       └── ch4_mapping.js              # CH₄ flux mapping
-├── data/     # in work
+├── data/     
 │   ├── sample/
 │   │   └── training_data_sample.csv    # Sample training data structure
 │   └── README.md                       # Data availability statement
-├── docs/    # in work
+├── docs/    
 │   └── methodology.md                  # Detailed methodology
 ├── figures/ # in work
 │   └── .gitkeep
