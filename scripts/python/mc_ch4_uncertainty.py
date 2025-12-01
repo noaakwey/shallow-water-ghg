@@ -23,7 +23,7 @@ Usage:
         --mask Shallow_Water_Mask.tif \
         --n-iter 2000
 
-Author: [Your Name]
+Author: Artur Gafurov
 Version: 1.0
 ================================================================================
 """
