@@ -244,4 +244,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions or collaboration inquiries, please contact:
 - **Author**: [Artur Gafurov]
 - **Email**: [e-mail](amgafurov@kpfu.ru)
-- **Institution**: [Kazan Federal University](https://en.kpfu.ru)
+- **Institution**: [Kazan Federal University](https://eng.kpfu.ru)
