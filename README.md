@@ -10,7 +10,7 @@
 This repository contains the complete codebase for estimating greenhouse gas emissions (CO₂ and CH₄) from shallow water zones of the Kuibyshev Reservoir using satellite remote sensing and eddy covariance measurements.
 
 **Key Features:**
-- Integration of Sentinel-2, Landsat LST, and Sentinel-1 SAR data
+- Integration of Sentinel-2, Landsat LST data
 - Machine learning models for GPP, Reco, and CH₄ flux estimation
 - Monte Carlo uncertainty analysis
 - Google Earth Engine implementation for regional mapping
@@ -29,13 +29,13 @@ This repository contains the complete codebase for estimating greenhouse gas emi
 │       ├── s2_landsat_predictors.js    # S2 + Landsat LST extraction
 │       ├── gpp_reco_mapping.js         # GPP/Reco flux mapping
 │       └── ch4_mapping.js              # CH₄ flux mapping
-├── data/
+├── data/     # in work
 │   ├── sample/
 │   │   └── training_data_sample.csv    # Sample training data structure
 │   └── README.md                       # Data availability statement
-├── docs/
+├── docs/    # in work
 │   └── methodology.md                  # Detailed methodology
-├── figures/
+├── figures/ # in work
 │   └── .gitkeep
 └── requirements.txt
 ```
@@ -92,7 +92,7 @@ python scripts/python/train_ch4_model.py \
 
 ```bash
 python scripts/python/mc_nee_uncertainty.py \
-    --fluxes /path/to/Instantaneous_Fluxes_11am_umol_s.vrt \
+    --fluxes /path/to/Instantaneous_Fluxes_11am_umol_s.vrt \ # vrt ot tiff
     --mask /path/to/Shallow_Water_Mask.tif \
     --reco-band 1 \
     --gpp-band 2 \
@@ -111,7 +111,7 @@ python scripts/python/mc_nee_uncertainty.py \
 
 ```bash
 python scripts/python/mc_ch4_uncertainty.py \
-    --ch4-raster /path/to/CH4_Moment_Mean_umol_s.tif \
+    --ch4-raster /path/to/CH4_Moment_Mean_umol_s.tif \ # vrt ot tiff
     --mask /path/to/Shallow_Water_Mask.tif \
     --rmse 0.026 \
     --f-ch4-mean 0.876 --f-ch4-sd 0.05 \
@@ -191,14 +191,13 @@ CH4_moment = γ₀ + γ₁×LST + γ₂×LST²
 
 ### Eddy Covariance Data
 
-Half-hourly eddy covariance measurements (CO₂ and CH₄ fluxes) from the Kuibyshev Reservoir tower site are available upon request. Contact: [MVKozhevnikova@kpfu.ru]
+Half-hourly eddy covariance measurements (CO₂ and CH₄ fluxes) from the Kuibyshev Reservoir tower site are available upon request. Contact: [MVKozhevnikova@kpfu.ru](Project Superviser)
 
 ### Satellite Data
 
 All satellite data used in this study are freely available:
 - **Sentinel-2 SR**: `COPERNICUS/S2_SR` (Google Earth Engine)
 - **Landsat 8/9 L2**: `LANDSAT/LC08/C02/T1_L2`, `LANDSAT/LC09/C02/T1_L2`
-- **Sentinel-1 GRD**: `COPERNICUS/S1_GRD`
 
 ### Derived Products
 
@@ -221,11 +220,11 @@ For stable model application, predictors should be clamped to training data rang
 If you use this code or methodology, please cite:
 
 ```bibtex
-@article{YourName2025,
+@article{articleID2025,
   title={Satellite-based estimation of CO₂ and CH₄ fluxes from shallow waters of a large temperate reservoir: Integrating eddy covariance with Sentinel-2 and Landsat thermal imagery},
-  author={Your Name and Co-authors},
+  author={Artur Gafurov et al},
   journal={Remote Sensing of Environment},
-  year={2025},
+  year={2025(6)},
   doi={10.xxxx/xxxxx}
 }
 ```
@@ -244,5 +243,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or collaboration inquiries, please contact:
 - **Author**: [Artur Gafurov]
-- **Email**: [amgafurov@kpfu.ru]
+- **Email**: [amgafurov@kpfu.ru](e-mail)
 - **Institution**: [Kazan Federal University]
